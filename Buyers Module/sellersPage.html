@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sellersPage.css">
+	<title></title>
+	<title>Home</title>
+</head>
+<body>
+	<header>
+		<h3>SAIDIA<span>Fruits</span></h3>
+  		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+  		<nav>
+    		<ul>
+      			<li><a href="sellersPage.html">Home</a></li>
+      			<li><a href="postOffer.html">Post Offer</a></li>
+      			<li><a href="contact.html">Contact</a></li>
+    		</ul>
+    		<div id="icon">
+    			<a href="Details.html" style="float: right;margin-left: 180px;"><i class="fa fa-user-circle-o" style="font-size: 40px;"></i></a>
+    			
+    			
+    		</div>
+  		</nav>
+  		<label for="nav-toggle" class="nav-toggle-label">
+    	<span></span>
+  		</label>
+	
+	</header>
+	<br><br><br><br><br><br>
+	
+
+  <section style="float: center;">
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Fruits')">Fruits</button>
+      <button class="tablinks" onclick="openCity(event, 'Vegetables')">Vegetables</button>
+      <button class="tablinks" onclick="openCity(event, 'Cereals')">Cereals</button>
+    </div>
+
+    <div id="Fruits" class="tabcontent">
+     <div class="image"><a href=""><img src="Images/apples.jpg" alt="Apples"></a></div>
+    <div class="image"><a href=""><img src="Images/watermelon.jpg" alt="Watermelon"></a></div>
+    <div class="image"><a href=""><img src="Images/pineapple.jpg" alt="Pineapple"></a></div>
+    <div class="image"><a href=""><img src="Images/pears.jpg" alt="Pears"></a></div>
+    <div class="image"><a href=""><img src="Images/orange.png" alt="Orange"></a></div>
+    <div class="image"><a href=""><img src="Images/mango.jpg" alt="Mango"></a></div>
+    <div class="image"><a href=""><img src="Images/banana.jpg" alt="Banana"></a></div>
+    <div class="image"><a href=""><img src="Images/avocado.jpg" alt="Avocado"></a></div>
+    <div class="image"><a href=""><img src="Images/pawpaw.jpg" alt="Pawpaw"></a></div>
+  
+    </div>
+
+<div id="Vegetables" class="tabcontent">
+  <div class="image"><a href=""><img src="Images/pumpkin.jpg" alt="Pumpkin"></a></div>
+  <div class="image"><a href=""><img src="Images/mushroom.jpg" alt="Mushroom"></a></div>
+  <div class="image"><a href=""><img src="Images/lettuce.jpg" alt="Lettuce"></a></div>
+  <div class="image"><a href=""><img src="Images/kilantro.jpg" alt="Kilantro"></a></div>
+  <div class="image"><a href=""><img src="Images/kale.jpg" alt="Kale"></a></div>
+
+</div>
+
+<div id="Cereals" class="tabcontent">
+  <div class="image"><a href=""><img src="Images/maize.jpg" alt="Maize"></a></div>
+  <div class="image"><a href=""><img src="Images/wheat.jpg" alt="Wheat"></a></div>
+  <div class="image"><a href=""><img src="Images/rice.jpg" alt="Rice"></a></div>
+  <div class="image"><a href=""><img src="Images/corn.jpg" alt="Corn"></a></div>
+ 
+  
+</div>
+
+</section>
+<br><br><br><br><br>
+
+<footer class="footer-distributed">
+			<div class="footer-left">
+				<h3>SAIDIA<span>Fruits</span></h3>
+				<p class="footer-links">
+					<a href="#">Home</a> &bull;
+					<a href="#">Blog</a> &bull;
+					<a href="#">Pricing</a> &bull;
+					<a href="#">About</a><span> &bull;
+					<a href="#">Faq</a> &bull;
+					<a href="#">Contact</a> 
+				</p>
+			</div>
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Ring Road</span> Kilimani,Nairobi</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+254798986169</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:Khalid.duale@strathmore.edu">khalid.duale@strathmore.edu</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					<p>Founded to help the farmer and eliminate the purpose of middlemen</p>
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+				</div>
+			</div>
+		</footer>
+<script>
+function openCity(evt, categoryName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(categoryName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>

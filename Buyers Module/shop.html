@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/buyershomepage.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<header>
+	
+			<h3>SAIDIA<span>Fruits</span></h3>
+  		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+  		<nav>
+    		<ul>
+      			<li><a href="buyersPage.html">Home</a></li>
+      			<li><a href="shop.html">Shop</a></li>
+      			<li><a href="contact.html">Contact</a></li>
+    		</ul>
+    		<div id="icon">
+    			<a href="Details.html" style="float: right;margin-left: 180px;"><i class="fa fa-user-circle-o" style="font-size: 40px;"></i></a>
+    			
+    			
+    		</div>
+  		</nav>
+  		<label for="nav-toggle" class="nav-toggle-label">
+    	<span></span>
+  		</label>
+	
+	</header>
+	<br><br><br><br><br><br><br>
+	<section>
+		<div class="imaged">
+			<img src="images/apples.jpg" style="width: 200px;border: height:130px;">
+			
+		</div>
+		
+	</section>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<footer class="footer-distributed" style="margin-top: 200px;">
+			<div class="footer-left">
+				<h3>SAIDIA<span>Fruits</span></h3>
+				<p class="footer-links">
+					<a href="#">Home</a> &bull;
+					<a href="#">Blog</a> &bull;
+					<a href="#">Pricing</a> &bull;
+					<a href="#">About</a><span> &bull;
+					<a href="#">Faq</a> &bull;
+					<a href="#">Contact</a> 
+				</p>
+			</div>
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Ring Road</span> Kilimani,Nairobi</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+254798986169</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:Khalid.duale@strathmore.edu">khalid.duale@strathmore.edu</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					<p>Founded to help the farmer and eliminate the purpose of middlemen</p>
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+				</div>
+			</div>
+		</footer>
+
+
+<script type="text/javascript">
+    /*window.onload = function () {
+        var fileupload = document.getElementById("fileupload1");
+        var filePath = document.getElementById("spnFilePath");
+        var image = document.getElementById("imgfileupload");
+        image.onclick = function () {
+            fileupload.click();
+        };
+        fileupload.onchange = function () {
+            var fileName = fileupload.value.split('\\')[fileupload.value.split('\\').length - 1];
+            filePath.innerHTML = "<b>Selected File: </b>" + fileName;
+        };
+    };*/
+    function previewFile(){
+       var preview = document.getElementById('imgfileupload'); //selects the query named img
+       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+       var reader  = new FileReader();
+
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       };
+
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+       }
+  }
+
+  previewFile();  
+</script>
+</body>
+
+</html>

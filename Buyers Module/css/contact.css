@@ -1,0 +1,74 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+section {
+	margin-top: 50px;
+}
+
+input {
+	margin: 20px 20px;
+	width: 250px;
+	height: 30px;
+	border:1px solid #f6f7ea;
+	padding-left: 5px;
+	background-color: #f1f1f1;
+}
+
+textarea {
+	margin: 20px 20px;
+	padding-left: 8px;
+	padding-top: 8px;
+	border:1px solid #f6f7ea;
+	background-color: #f1f1f1;
+	resize: none;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+
+}
+
+section hr {
+	width: 500px;
+	float: left;
+	margin-top: 4px;
+	margin-left: 40px;
+}
+
+section #acc {
+
+	padding-top: 70px;
+	font-family: monospace;
+	font-size: 40px;
+	margin-bottom: 0;
+	margin-left: 40px;
+}
+
+input[type=submit] {
+
+	height: 35px;
+    width: 120px;
+    background-color:transparent;
+    color:black;
+    border:1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-bottom: 50px;
+  	background-color: #D3BE84;
+
+
+}
+
+input:hover[type=submit]{
+	background-color: #351334;
+	color: white;
+	cursor: pointer;
+
+}
+
+
+
